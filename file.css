@@ -196,7 +196,7 @@ body {
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
   .header-pc {display:none;}
-  .footer .access {margin-top:40px;padding:0 2%}
+  .footer .access {margin-top:60px;padding:0 2%}
 }
 .footer .contact {
   display:flex;
