@@ -32,7 +32,7 @@ body {
   color:rgba(19, 47, 86, 1);
   padding:2px 5px;
   border-radius:15px;
-  align-items:bottom;
+  align-self: flex-end;
 }
 
 .main-content {
