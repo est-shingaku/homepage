@@ -49,7 +49,7 @@ body {
 /* 🟧pc画面🟧 */
 @media (min-width: 768px){
   .img-top {
-    position:relative;
+    position:absolute;
     left:0;top:0;
     object-fit: cover;
     /*右側透明グラデーション*/
@@ -60,7 +60,7 @@ body {
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
-  .img-top{width:100%}
+  .img-top{width:100%;margin:20px 0}
 }
 
 .trial-lesson {
