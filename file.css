@@ -48,19 +48,29 @@ body {
 }
 /* 🟧pc画面🟧 */
 @media (min-width: 768px){
-  .img-top {
-    position:absolute;
-    left:0;top:0;
-    object-fit: cover;
-    /*右側透明グラデーション*/
+  .top-content {
+    position: relative;
+    overflow: hidden;
+  }
+  .bg {
+    position: absolute;
+    inset: 0; /* top:0; left:0; right:0; bottom:0; */
+    background-image: url("img-top");
+    background-size: cover;
+    background-position: center;
+    /* 右側透明 */
     -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
     mask-image: linear-gradient(to right, black 60%, transparent 100%);
-    z-index:0;
+    z-index: 0;
+  }
+  .text-area {
+    position: relative;
+    z-index: 1; /* ← テキストを前に出す */
   }
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
-  .img-top{width:100%;margin:20px 0}
+  .bg{background-image: url("img-top");width:100%;margin-bottom:20px}
 }
 
 .trial-lesson {
