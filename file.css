@@ -75,7 +75,29 @@ body {
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
-  .bg{background-image: url("img-top.jpg");width:100%;margin-bottom:20px}
+  .top-content {
+    position: relative;  /* 背景用レイヤーの基準 */
+    overflow: hidden;    /* はみ出し防止 */
+  }
+  .text-area {
+    position: relative;
+    z-index: 1;          /* 背景より前に表示 */
+  }
+  /* 背景画像レイヤー */
+  .bg {
+    position: absolute;
+    top: 0;
+    margin:0 auto;
+    width: 100%;
+    background-image: url("img-top.jpg");
+    background-size: auto 100%;
+    background-position: top center; /* 上寄せ */
+    background-repeat: no-repeat;
+    /*透明度*/
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    z-index: 0;
+  }  
 }
 
 .trial-lesson {
