@@ -46,6 +46,21 @@ body {
 .top-content h1 {
   margin-bottom:10px;
 }
+/* 🟧pc画面🟧 */
+@media (min-width: 768px){
+  .img-top {
+    position:relative;
+    left:0;bottom:0;
+    /*右側透明グラデーション*/
+    -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
+    mask-image: linear-gradient(to right, black 70%, transparent 100%);
+    z-index:0;
+  }
+}
+/* 🟧スマホ画面🟧 */
+@media (max-width: 767px){
+  .img-top{width:100%}
+}
 
 .trial-lesson {
   background-color:#FFEB70;
