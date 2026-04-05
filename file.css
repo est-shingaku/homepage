@@ -67,10 +67,14 @@ body {
     background-size: auto 100%; /* ← これが超重要 */
     background-position: left center; /* ← 左寄せ */
     background-repeat: no-repeat;
+    z-index: 0;
     /*透明度*/
     -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
     mask-image: linear-gradient(to right, black 60%, transparent 100%);
-    z-index: 0;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
   }
 }
 /* 🟧スマホ画面🟧 */
