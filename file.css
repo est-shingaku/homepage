@@ -51,6 +51,7 @@ body {
   .img-top {
     position:relative;
     left:0;bottom:0;
+    object-fit: cover;
     /*右側透明グラデーション*/
     -webkit-mask-image: linear-gradient(to right, black 70%, transparent 100%);
     mask-image: linear-gradient(to right, black 70%, transparent 100%);
