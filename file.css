@@ -62,13 +62,12 @@ body {
     top: 0;
     left: 0;
     bottom: 0;
-    width: auto;          /* 横幅は自動、テキスト高さに追従 */
-    height: 100%;         /* テキストの高さに合わせる */
+    width: 100%; /* ← これはOK（表示領域） */
     background-image: url("img-top.jpg");
-    background-size: auto 100%;      /* 縦を親に合わせて横幅は自動 */
-    background-position: left center; /* 左寄せ */
+    background-size: auto 100%; /* ← これが超重要 */
+    background-position: left center; /* ← 左寄せ */
     background-repeat: no-repeat;
-    /* 右側透明グラデーション */
+    /*透明度*/
     -webkit-mask-image: linear-gradient(to right, black 60%, transparent 100%);
     mask-image: linear-gradient(to right, black 60%, transparent 100%);
     z-index: 0;
