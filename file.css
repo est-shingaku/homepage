@@ -223,21 +223,24 @@ body {
 
 
 /*▼▼▼フェードイン▼▼▼*/
-.fadein {
-  opacity: 0;
-  transform: translate(0, 0);
-  transition: all 1.5s;
-}
-body {
-  overflow-x: hidden;
-}
-.fadein.fadein-left {transform: translate(-20px, 0);}
-.fadein.fadein-right {transform: translate(20px, 0);}
-.fadein.fadein-up {transform: translate(0, -20px);}
-.fadein.fadein-bottom {transform: translate(0, 20px);}
-.fadein.scrollin {
-  opacity: 1 !important;
-  transform: translate(0, 0) !important;
+/* 🟧スマホ画面🟧 */
+@media (max-width: 767px){
+  .fadein {
+    opacity: 0;
+    transform: translate(0, 0);
+    transition: all 1.5s;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  .fadein.fadein-left {transform: translate(-20px, 0);}
+  .fadein.fadein-right {transform: translate(20px, 0);}
+  .fadein.fadein-up {transform: translate(0, -20px);}
+  .fadein.fadein-bottom {transform: translate(0, 20px);}
+  .fadein.scrollin {
+    opacity: 1 !important;
+    transform: translate(0, 0) !important;
+  }
 }
 /*▲▲▲フェードイン▲▲▲*/
 
