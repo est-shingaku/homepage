@@ -101,10 +101,10 @@ body {
   .pc-yokonarabe {
     display:flex;
     justify-content:space-between;
-    gap:50px
+    gap:40px
   }
   .pc-yokonarabe>div {
-    width: calc(50% - 25px); /* gapの半分を引く */
+    width: calc(50% - 20px); /* gapの半分を引く */
   }
   
   .pc-yokonarabe-1 {
@@ -159,12 +159,16 @@ body {
   border-radius:10px;
   box-shadow:0px 0px 5px black;
   color:white;
-  margin:2em 4%;
+  margin-top:2em; margin-bottom:2em;
 }
 .student-voice-section:last-of-type {margin-bottom:0}
 .student-voice-section>div:first-child {
   border-bottom:solid 1px white;
   margin-bottom:10px;
+}
+/* 🟧スマホ画面🟧 */
+@media (max-width: 767px){
+  .student-voice-section{margin-left:2%;margin-right:2%}
 }
 .student-name{font-weight:bold;font-size:1.2em}
 .student-name>span {font-size:1rem;font-weight:normal;margin-left:5px}
