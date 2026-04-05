@@ -170,6 +170,10 @@ body {
 @media (max-width: 767px){
   .student-voice-section{margin-left:2%;margin-right:2%}
 }
+/* 🟧pc画面🟧 */
+@media (min-width: 768px){
+  .student-voice .pc-yokonarabe{margin:0 4%}
+}
 .student-name{font-weight:bold;font-size:1.2em}
 .student-name>span {font-size:1rem;font-weight:normal;margin-left:5px}
 .school-name{font-weight:bold;font-size:1.5em;text-align:center}
