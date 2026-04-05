@@ -64,7 +64,7 @@ body {
     bottom: 0;
     width: auto;          /* 横幅は自動、テキスト高さに追従 */
     height: 100%;         /* テキストの高さに合わせる */
-    background-image: url("img-top");
+    background-image: url("img-top.jpg");
     background-size: auto 100%;      /* 縦を親に合わせて横幅は自動 */
     background-position: left center; /* 左寄せ */
     background-repeat: no-repeat;
@@ -76,7 +76,7 @@ body {
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
-  .bg{background-image: url("img-top");width:100%;margin-bottom:20px}
+  .bg{background-image: url("img-top.jpg");width:100%;margin-bottom:20px}
 }
 
 .trial-lesson {
