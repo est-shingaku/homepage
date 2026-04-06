@@ -76,29 +76,25 @@ body {
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
-  .top-content{position:relative;}
-  .text-area{z-index:1;margin-top:50px}
-  .bg {
-    width:100%;
-    z-index:0;
-    position:absolute;
-    margin:0 auto;
-    pointer-event:none;
-  }
-  .bg-img {
-    display:block;
-    width:100%;            /* 要素ボックス全体を使う */
-    object-fit: contain;   /* 切らずにボックス内に収める */
-    object-position: left center; /* 左寄せで中央揃え */
-    /* マスク設定 */
-    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    -webkit-mask-position: top left;
-    mask-position: top left;
+  .bg{display:none}
+  .text-area {
+  position: relative;
+  z-index: 1;
+  margin-top: 50px; /* 上部分を出す */
+  padding: 20px;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 100%), 
+              url('img-top.jpg') no-repeat left top;
+  background-size: contain; /* 画像を切らずに収める */
+  background-repeat: no-repeat;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-position: top left;
+  mask-position: top left;
+  border-radius: 15px;
   }
 }
 
