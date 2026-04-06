@@ -88,7 +88,6 @@ body {
   .bg-img {
     display:block;
     width:100%;            /* 要素ボックス全体を使う */
-    height:100%;           /* 要素ボックス全体を使う */
     object-fit: contain;   /* 切らずにボックス内に収める */
     object-position: left center; /* 左寄せで中央揃え */
     /* マスク設定 */
