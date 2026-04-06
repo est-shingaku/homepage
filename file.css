@@ -57,14 +57,13 @@ body {
     z-index: 1;          /* 背景より前に表示 */
   }
   /* 背景画像レイヤー */
-  .bg { position: absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; }
+  .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; }
   .bg-img {
-    display: block;
-    height: 100%;            /*親と同じ高さ*/
-    width: auto;             /*幅は可変（アスペクト比維持）*/
-    object-fit: none;        /*画像の縦を親に合わせ、横は自動*/
-    object-position: left center; /*左寄せ*/
-    /*透明グラデーション*/
+    display:block;
+    width:100%;            /* 要素ボックス全体を使う */
+    height:100%;           /* 要素ボックス全体を使う */
+    object-fit: contain;   /* 切らずにボックス内に収める */
+    object-position: left center; /* 左寄せで中央揃え */
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
     mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 70%, rgba(0,0,0,0) 100%);
     -webkit-mask-repeat: no-repeat;
