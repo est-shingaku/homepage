@@ -77,7 +77,7 @@ body {
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
   .top-content{position:relative;}
-  .text-area{z-index:1}
+  .text-area{z-index:1;margin-top:50px}
   .bg {
     width:100%;
     z-index:0;
@@ -100,7 +100,6 @@ body {
     mask-size: 100% 100%;
     -webkit-mask-position: top left;
     mask-position: top left;
-    background: red; /* 透ける部分が見えるように背景色を設定 */
   }
 }
 
