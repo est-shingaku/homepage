@@ -265,8 +265,8 @@ body {
 /*🟧スマホでのみ表示画像🟧*/
 .sp-only {display: none;}
 @media (max-width: 767px) {
-  .sp-only {margin-bottom:20px;display:block}
-  picture img{width:100%;display:block}
+  .sp-only {margin-bottom:50px;display:block;padding:0 4%}
+  picture img{width:100%;display:block;}
 }
 
 /*▼footer▼*/
