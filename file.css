@@ -83,7 +83,7 @@ body {
   .text-area {
     position: relative;
     z-index: 1;
-    margin-top: 210px;   /* 画像の上部分を出す */
+    margin-top: 200px;   /* 画像の上部分を出す */
     padding: 0 4%;      /* 左右4%の余白 */
   }
   /* 背景画像 */
