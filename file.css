@@ -175,6 +175,7 @@ body {
   
   .pc-yokonarabe-1 {
     display:flex;
+    align-items: center;/*縦中央*/
     justify-content:space-between;
   }
   .pc-yokonarabe-1 .top-content {
