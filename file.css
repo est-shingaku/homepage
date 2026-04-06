@@ -262,6 +262,11 @@ body {
 }
 .faq-section details>div{margin-top:10px}
 
+/*スマホでのみ表示画像*/
+.sp-only {display: none;}
+@media (max-width: 767px) {
+  .sp-only {display: block;width:100%;margin:20px 0}
+}
 
 /*▼footer▼*/
 .footer {
