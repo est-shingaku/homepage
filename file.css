@@ -76,7 +76,6 @@ body {
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
-  .bg{display:none}
   .top-content {
     position: relative;
   }
