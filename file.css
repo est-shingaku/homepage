@@ -179,6 +179,7 @@ body {
   
   .pc-yokonarabe-1 {
     display:flex;
+    align-items: stretch;/*子要素の高さ揃える*/
     justify-content:space-between;
   }
   .pc-yokonarabe-1 .top-content {
