@@ -73,6 +73,10 @@ body {
     -webkit-mask-position: left center;
     mask-position: left center;
   }
+  .trial-lesson { 
+    height:100%;
+    align-self: center; /* 中央 */
+  }
 }
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
@@ -175,7 +179,6 @@ body {
   
   .pc-yokonarabe-1 {
     display:flex;
-    align-items: center;/*縦中央*/
     justify-content:space-between;
   }
   .pc-yokonarabe-1 .top-content {
