@@ -77,24 +77,44 @@ body {
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
   .bg{display:none}
+  .top-content {
+    position: relative;
+  }
+  /* テキスト部分 */
   .text-area {
-  position: relative;
-  z-index: 1;
-  margin-top: 50px; /* 上部分を出す */
-  padding: 20px;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.7) 100%), 
-              url('img-top.jpg') no-repeat left top;
-  background-size: contain; /* 画像を切らずに収める */
-  background-repeat: no-repeat;
-  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-  mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100% 100%;
-  mask-size: 100% 100%;
-  -webkit-mask-position: top left;
-  mask-position: top left;
-  border-radius: 15px;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;   /* 画像の上部分を出す */
+    padding: 0 4%;      /* 左右4%の余白 */
+    background-color: #fff; /* 透明なし */
+  }
+
+  /* 背景画像 */
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  .bg-img {
+    display: block;
+    width: 100%;           /* 横幅いっぱいに表示 */
+    height: auto;
+    object-fit: cover;      /* 画像の比率を保持してボックスに収める */
+    object-position: top center; /* 上側を表示 */
+
+    /* 下だけ透明にするマスク */
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    -webkit-mask-position: top left;
+    mask-position: top left;
   }
 }
 
