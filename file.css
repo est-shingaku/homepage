@@ -53,7 +53,7 @@ body {
     overflow: hidden;    /* はみ出し防止 */
     /*文字.text-area下寄せ*/
     display: flex;
-    align-items: bottom;
+    align-items: flex-end;
     justify-content: center;
   }
   .text-area {
