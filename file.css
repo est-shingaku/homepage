@@ -54,6 +54,7 @@ body {
     /*文字.text-area下寄せ*/
     display: flex;
     align-items: bottom;
+    justify-content: center;
   }
   .text-area {
     position: relative;
