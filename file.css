@@ -223,6 +223,9 @@ body {
 .class-detail{
   padding:40px 4%
 }
+.class-detail h2{
+  margin-bottom:1em
+}
 .class-detail table{
   text-align: center;
   margin-top: 15px; margin-bottom:30px;
