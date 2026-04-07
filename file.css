@@ -220,6 +220,16 @@ body {
   text-align:right
 }
 
+.class-detail{
+  padding:40px 4%
+}
+.class-detail table{
+  text-align: center;
+}　
+.class-detail th, .class-detail td{
+  padding:0.5em
+}
+
 .student-voice {
   /*格子*/
   background-image: linear-gradient(0deg, transparent calc(100% - 1px), #474747 calc(100% - 1px)),
