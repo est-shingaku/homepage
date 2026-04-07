@@ -51,13 +51,15 @@ body {
   .top-content {
     position: relative;  /* 背景用レイヤーの基準 */
     overflow: hidden;    /* はみ出し防止 */
+    display:flex; /*文字縦中央寄せ*/
   }
   .text-area {
     position: relative;
     z-index: 1;          /* 背景より前に表示 */
+    align-self: bottom; /*縦中央寄せ*/
   }
   .pc-font-size{
-    font-size:3em;align-self: bottom;
+    font-size:3em;
   }
   /* 背景画像レイヤー */
   .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; }
