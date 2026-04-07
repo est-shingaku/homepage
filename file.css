@@ -56,6 +56,9 @@ body {
     position: relative;
     z-index: 1;          /* 背景より前に表示 */
   }
+  .pc-font-size{
+    font-size:3em
+  }
   /* 背景画像レイヤー */
   .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; }
   .bg-img {
