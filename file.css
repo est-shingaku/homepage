@@ -178,10 +178,10 @@ body {
   .pc-yokonarabe {
     display:flex;
     justify-content:space-between;
-    gap:40px
+    gap:4%
   }
   .pc-yokonarabe>div {
-    width: calc(50% - 20px); /* gapの半分を引く */
+    width: calc(50% - 2%); /* gapの半分を引く */
   }
   
   .pc-yokonarabe-1 {
