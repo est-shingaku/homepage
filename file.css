@@ -51,6 +51,9 @@ body {
   .top-content {
     position: relative;  /* 背景用レイヤーの基準 */
     overflow: hidden;    /* はみ出し防止 */
+    /*文字.text-area下寄せ*/
+    display: flex;
+    align-items: bottom;
   }
   .text-area {
     position: relative;
