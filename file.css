@@ -97,6 +97,7 @@ body {
     margin-top: 200px;   /* 画像の上部分を出す */
     padding: 0 4%;      /* 左右4%の余白 */
   }
+  .pc-font-size{font-size:2em}
   /* 背景画像 */
   .bg {
     position: absolute;
