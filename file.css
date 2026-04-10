@@ -94,7 +94,8 @@ body {
   .text-area {
     position: relative;
     z-index: 1;
-    margin-top: 200px;   /* 画像の上部分を出す */
+    margin-top: 0;
+    padding-top: 200px;
     padding: 0 4%;      /* 左右4%の余白 */
   }
   .pc-font-size{font-size:2em}
@@ -136,7 +137,6 @@ body {
   background-color:#FFEB70;
   padding:20px 4%;
   text-align:center;
-  z-index:2;
 }
 .trial-lesson h1{
   margin-bottom:10px
