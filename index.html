@@ -495,18 +495,18 @@
   </section>
   
   <!--▼▼▼フェードインjs▼▼▼-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
-    $(window).scroll(function (){
-      $('.fadein').each(function(){
-        var elemPos = $(this).offset().top,
-            scroll = $(window).scrollTop(),
-            windowHeight = $(window).height();
-
-        if (scroll > elemPos - windowHeight + 150){
-          $(this).addClass('scrollin');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('scrollin');
         }
       });
+    }, {
+      rootMargin: '-150px'
+    });
+    document.querySelectorAll('.fadein').forEach(el => {
+      observer.observe(el);
     });
   </script>
   <!--▲▲▲フェードインjs▲▲▲-->
