@@ -235,6 +235,10 @@ body {
 .class-detail th, .class-detail td{
   padding:0.5em
 }
+.class-detail th {
+  background-color:#9E8E81;
+  color:white
+}
 
 .student-voice {
   /*格子*/
