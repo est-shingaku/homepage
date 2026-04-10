@@ -226,8 +226,8 @@ body {
 }
 .class-detail h2{
   margin-bottom:0;
-  border-left:solid 5px #4A90E2;
-  padding-left:5px;
+  border-left:solid 8px #4A90E2;
+  padding-left:10px;
 }
 .class-detail table{
   text-align: center;
