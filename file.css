@@ -226,7 +226,7 @@ body {
 }
 .class-detail h2{
   margin-bottom:10px;
-  border-left:solid 8px rgba(19, 47, 86, 1);
+  border-left:solid 8px #FFEB70;
   padding-left:10px;
 }
 .class-detail table{
