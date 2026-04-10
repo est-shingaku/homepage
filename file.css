@@ -123,9 +123,6 @@ body {
     -webkit-mask-position: top left;
     mask-position: top left;
   }
-  .class-detail table {
-    margin-bottom:40px;
-  }
 }
 
 .trial-lesson {
@@ -187,12 +184,6 @@ body {
   .pc-yokonarabe>div {
     width: calc(50% - 2%); /* gapの半分を引く */
   }
-  .pc-yokonarabe>.pc-left {
-    flex:2
-  }
-  .pc-yokonarabe>.pc-right {
-    flex:5
-  }
   
   .pc-yokonarabe-1 {
     display:flex;
@@ -238,8 +229,12 @@ body {
 }
 .class-detail table{
   text-align: center;
-  margin-top: 15px; 
-}　
+  margin-top: 15px;
+  margin-bottom:40px;
+}
+.class-detail>section:first-of-type {
+  margin-bottom: 20px
+}
 .class-detail th, .class-detail td{
   padding:0.5em
 }
