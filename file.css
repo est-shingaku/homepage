@@ -58,13 +58,12 @@ body {
   }
   .text-area {
     position: relative;
-    z-index: 1;          /* 背景より前に表示 */
   }
   .pc-font-size{
     font-size:3em;
   }
   /* 背景画像レイヤー */
-  .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; z-index:0}
+  .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none;}
   .bg-img {
     display:block;
     width:100%;            /* 要素ボックス全体を使う */
@@ -72,7 +71,7 @@ body {
     object-fit: contain;   /* 切らずにボックス内に収める */
     object-position: left center; /* 左寄せで中央揃え */
     -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
-    mask-image: linear-gradient(to right, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to right, rgba(0,0,0,1) %, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 100%);
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
     -webkit-mask-size: 100% 100%;
@@ -83,9 +82,9 @@ body {
   .trial-lesson { 
     height:100%;
     align-self: center; /* 中央 */
-    z-index:2;
   }
 }
+
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
   .top-content {
@@ -126,10 +125,17 @@ body {
   }
 }
 
+.bg {
+  z-index:0;
+}
+.text-area {
+   z-index: 1;   /* 背景より前に表示 */
+}
 .trial-lesson {
   background-color:#FFEB70;
   padding:20px 4%;
   text-align:center;
+  z-index:2;
 }
 .trial-lesson h1{
   margin-bottom:10px
