@@ -89,7 +89,7 @@ body {
 @media (max-width: 767px){
   .top-content {
     position: relative;
-    min-height: 400px;
+    min-height: 450px;
   }
   /* テキスト部分 */
   .text-area {
