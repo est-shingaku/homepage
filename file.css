@@ -230,10 +230,7 @@ body {
 .class-detail table{
   text-align: center;
   margin-top: 15px;
-  margin-bottom:40px;
-}
-.class-detail>section:first-of-type {
-  margin-bottom: 30px
+  margin-bottom:15px;
 }
 .class-detail th, .class-detail td{
   padding:0.5em
