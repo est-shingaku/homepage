@@ -64,7 +64,7 @@ body {
     font-size:3em;
   }
   /* 背景画像レイヤー */
-  .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; }
+  .bg { position:absolute; top:0; left:0; bottom:0; z-index:0; pointer-events:none; z-index:0}
   .bg-img {
     display:block;
     width:100%;            /* 要素ボックス全体を使う */
@@ -83,6 +83,7 @@ body {
   .trial-lesson { 
     height:100%;
     align-self: center; /* 中央 */
+    z-index:1;
   }
 }
 /* 🟧スマホ画面🟧 */
