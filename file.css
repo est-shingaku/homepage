@@ -43,9 +43,7 @@ body {
   padding:40px 4%;
   text-align:center;
 }
-.top-content h1 {
-  margin-bottom:10px;
-}
+
 /* 🟧pc画面🟧 */
 @media (min-width: 768px){
   .top-content {
