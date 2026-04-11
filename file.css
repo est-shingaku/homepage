@@ -93,7 +93,7 @@ body {
   .text-area {
     position: relative;
     z-index: 1;
-    margin-top: 200px;
+    margin-top: 250px;
     padding: 0 4%;      /* 左右4%の余白 */
   }
   .pc-font-size{font-size:2em}
