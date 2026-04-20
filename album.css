@@ -1,0 +1,144 @@
+body {
+  background-color:white; 
+  color:black;
+  font-family: sans-serif;
+}
+.main-content {
+  margin-top:70px;
+  padding:0 4%
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  z-index:999;
+  position:fixed;
+  top:0;
+  width:100%;
+  max-height:70px;
+  box-sizing: border-box;/*padding含む*/
+  padding:5px 4%;
+  background-color:rgba(19, 47, 86, 0.9);
+  color:white;
+  align-items: center;/*縦中央*/
+  display:flex;
+  justify-content:space-between;
+  box-shadow:0px 1px 5px black;
+}
+.site-name {
+  font-size:1.5em;
+  font-weight:bold;
+}
+.taisyo {
+  background-color:white;
+  color:rgba(19, 47, 86, 1);
+  padding:2px 5px;
+  border-radius:15px;
+  align-self: flex-end;
+}
+
+
+.gallery{padding-top:30px;padding-bottom:40px}
+.gallery .thumbnails{display:flex;justify-content:flex-start;flex-wrap: wrap;}
+.gallery .viewer {align-items: center;display:flex;justify-content:center;}
+.thumbnails img{aspect-ratio: 1 / 1;object-fit: cover;}
+
+/* ホバーでズーム */
+.thumbnails img {
+  transition: transform 0.3s ease;
+}
+.thumb:hover {
+  transform: scale(1.07);
+}
+
+/* 🟧スマホ画面🟧 */
+@media (max-width: 767px){
+  .header-pc {display:none;}
+  .viewer{margin-bottom:60px;height:300px}
+  .viewer img {max-height:300px;display:block;max-width:100%;margin:0 auto}
+  
+  .thumbnails {
+    gap: 8px;
+  }
+  .thumbnails img{
+    display: block;
+    border: 1px solid black;
+    width: calc((100% - 24px) / 4);/* 4列＋gap3つ分 */
+    height:auto;}
+}
+
+/* 🟧pc画面🟧 */
+@media (min-width: 768px){
+  .gallery{display:flex;flex-direction: row-reverse;justify-content:space-between;gap:30px}
+  .gallery .viewer{width:65%;height:350px}
+  .viewer img {max-height:350px;display:block;max-width:100%;margin:0 auto}
+  
+  .thumbnails {
+    gap: 10px;
+  }
+  .thumbnails img{
+    display: block;
+    border: 1px solid black;
+    width: calc((100% - 30px) / 4);/* 4列＋gap3つ分 */
+    height:auto;}  
+  
+  .pc-yokonarabe-1 {
+    display:flex;
+    justify-content:space-between;
+  }
+  .pc-yokonarabe-1 .top-content {
+    width:70%;
+  }
+  .pc-yokonarabe-1 .trial-lesson {
+    width:30%;
+  }
+  .footer .pc-yokonarabe-1 {
+    gap:60px;
+  }
+  .footer .pc-yokonarabe-1 .access {
+    width:50%;
+  }
+}
+
+
+/*▼footer▼*/
+.footer {
+  padding:30px 4%;
+  background-color:#FFEB70;
+}
+.footer .copyright {
+  font-size:0.8em;
+  color:#abb8c8;
+  margin:30px auto 0 auto;
+  text-align:center;
+}
+/* 🟧スマホ画面🟧 */
+@media (max-width: 767px){
+  .header-pc {display:none;}
+  .footer .access {margin-top:60px;padding:0 2%}
+}
+.footer .contact {
+  display:flex;
+  justify-content:space-between;
+  background-color:white;
+  align-items:center;
+  align-items:stretch;
+  margin-top:20px
+}
+.footer .contact-left {
+  background-color:#524E46;
+  padding:10px;
+  color:white;
+  flex-direction:column; 
+  justify-content:center;
+  display:flex
+}
+.footer .contact-right {
+  color:black;
+  padding:10px;
+  flex:1
+}
+/*▲footer▲*/
+
