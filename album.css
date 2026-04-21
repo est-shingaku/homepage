@@ -72,13 +72,14 @@ body {
 /* 🟧pc画面🟧 */
 @media (min-width: 768px){
   .gallery{display:flex;flex-direction: row-reverse;justify-content:space-between;gap:30px}
-  .gallery .viewer{width:65%}
-  .viewer img {max-height:350px;display:block;max-width:100%;margin:0 auto}
+  .gallery .viewer{flex: 0 0 65%;}
+  .viewer img {max-height:400px;display:block;max-width:100%;margin:0 auto}
   
   .thumbnails {
     gap: 10px;
   }
   .thumbnails img{
+    gap: 10px;
     display: block;
     border: 1px solid black;
     width: calc((100% - 50px) / 6);/* 4列＋gap3つ分 */
