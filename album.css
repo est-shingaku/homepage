@@ -81,7 +81,7 @@ body {
   .thumbnails img{
     display: block;
     border: 1px solid black;
-    width: calc((100% - 30px) / 4);/* 4列＋gap3つ分 */
+    width: calc((100% - 50px) / 6);/* 4列＋gap3つ分 */
     height:auto;}  
   
   .pc-yokonarabe-1 {
