@@ -72,7 +72,7 @@ body {
 /* 🟧pc画面🟧 */
 @media (min-width: 768px){
   .gallery{display:flex;flex-direction: row-reverse;justify-content:space-between;gap:30px}
-  .gallery .viewer{width:65%;height:350px}
+  .gallery .viewer{width:65%}
   .viewer img {max-height:350px;display:block;max-width:100%;margin:0 auto}
   
   .thumbnails {
