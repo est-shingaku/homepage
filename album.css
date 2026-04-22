@@ -83,8 +83,7 @@ body {
     display: block;
     border: 1px solid black;
     width: calc((100% - 40px) / 5);
-    height: calc((100% - 40px) / 5);
-    height:auto;}  
+    height: calc((100% - 40px) / 5);}  
   
   .pc-yokonarabe-1 {
     display:flex;
