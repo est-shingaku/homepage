@@ -56,7 +56,7 @@ body {
 /* 🟧スマホ画面🟧 */
 @media (max-width: 767px){
   .header-pc {display:none;}
-  .viewer{margin-bottom:60px;height:300px}
+  .viewer{margin-bottom:40px;height:300px}
   .viewer img {max-height:300px;display:block;max-width:100%;margin:0 auto}
   
   .thumbnails {
@@ -65,8 +65,7 @@ body {
   .thumbnails img{
     display: block;
     border: 1px solid black;
-    width: calc((100% - 24px) / 4);/* 4列＋gap3つ分 */
-    height:auto;}
+    width: calc((100% - 24px) / 4);/* 4列＋gap3つ分 */}
 }
 
 /* 🟧pc画面🟧 */
@@ -83,7 +82,6 @@ body {
     display: block;
     border: 1px solid black;
     width: calc((100% - 40px) / 5);
-    aspect-ratio: 1 / 1;
   }  
   
   .pc-yokonarabe-1 {
