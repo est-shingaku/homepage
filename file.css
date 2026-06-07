@@ -44,6 +44,8 @@ body {
   text-align:center;
 }
 
+.sitetitle-link{text-decoration:none;color:inherit}
+
 /* 🟧pc画面🟧 */
 @media (min-width: 768px){
   .top-content {
