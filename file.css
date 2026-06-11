@@ -17,7 +17,7 @@ body {
   z-index: 9999;
 }
 .fixed-album img {
-  width: 25vw;
+  width: 30vw;
   height: auto;
 }
 @media (min-width: 768px){
