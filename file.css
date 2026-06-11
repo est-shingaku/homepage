@@ -12,12 +12,12 @@ body {
 /*estアルバム画像リンク*/
 .fixed-album {
   position: fixed;
-  bottom: 15px;
+  bottom: 10px;
   right: 15px;
   z-index: 9999;
 }
 .fixed-album img {
-  width: 23vw;
+  width: 25vw;
   height: auto;
 }
 @media (min-width: 768px){
