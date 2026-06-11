@@ -17,16 +17,16 @@ body {
   z-index: 9999;
 }
 .fixed-album img {
-  width: 30vw;
+  width: 27vw;
   height: auto;
 }
 @media (min-width: 768px){
   .fixed-album {
     bottom: 20px;
-    right: 20px;
+    right: 25px;
   }
   .fixed-album img {
-    width: 15vw;
+    width: 35vw;
   }
 }
 /* ホバーでズーム */
