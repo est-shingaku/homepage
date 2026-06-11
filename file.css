@@ -23,10 +23,10 @@ body {
 @media (min-width: 768px){
   .fixed-album {
     bottom: 20px;
-    right: 25px;
+    right: 20px;
   }
   .fixed-album img {
-    width: 20vw;
+    width: 10vw;
   }
 }
 /* ホバーでズーム */
