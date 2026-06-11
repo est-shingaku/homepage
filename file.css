@@ -8,6 +8,28 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/*estアルバム画像リンク*/
+.fixed-album {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+}
+.fixed-album img {
+  width: 10%;
+  height: auto;
+}
+@media (min-width: 768px){
+  .fixed-album {
+    bottom: 20px;
+    right: 20px;
+  }
+  .fixed-album img {
+    width: 10%; 
+  }
+}
+
 .header {
   z-index:999;
   position:fixed;
