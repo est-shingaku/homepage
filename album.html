@@ -137,6 +137,51 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+
+  // ▼class="thumbnails"内の画像保存禁止
+// PC: コンテキストメニュー非表示・ドラッグ・保存ショートカットを阻止
+(() => {
+  let lastTarget = null;
+  document.addEventListener('mousedown', e => {lastTarget = e.target;});
+  /*右クリックメニューを非表示*/
+  document.addEventListener('contextmenu', e => {
+    if (!e.target.closest) return;
+    if (e.target.closest('.thumbnails')) e.preventDefault();
+  });
+  /*ドラッグを禁止→ドラッグによる保存を禁止*/
+  document.addEventListener('dragstart', e => {
+    if (!e.target.closest) return;
+    if (e.target.closest('.thumbnails')) e.preventDefault();
+  });
+  /*キーボードショートカット Ctrl(Windows) または Cmd(Mac)+S を無効化*/
+  document.addEventListener('keydown', e => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 's') {
+      if (lastTarget && lastTarget.closest?.('.thumbnails')) {e.preventDefault();}
+    }
+  });
+})();
+
+// スマホ: 長押しを検出してpreventDefault
+document.querySelectorAll('.thumbnails').forEach(img => {
+  /*長押しを判定するためのタイマーを保存しておく変数*/
+  let timer = null;
+  /* 長押し開始の検出（touchstart） */
+  img.addEventListener(
+    'touchstart',
+    e => {
+      timer = setTimeout(() => {
+        e.preventDefault();
+      }, 500 /*500ms以上で長押し扱い*/);
+    },
+    { passive: false }
+  );
+  /*指を離した場合タイマーキャンセル*/
+  img.addEventListener('touchend', () => {clearTimeout(timer); }, {passive: true});
+  /*指が動いた場合タイマーキャンセル（スクロール操作への干渉を防ぐ）*/
+  img.addEventListener('touchmove', () => {clearTimeout(timer);}, { passive: true });
+});
+// ▲class="thumbnails"内の画像保存禁止
 </script>  
 </body>
 </html>
