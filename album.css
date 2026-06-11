@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
 }
+.sitetitle-link{text-decoration:none;color:inherit}
 .header {
   z-index:999;
   position:fixed;
