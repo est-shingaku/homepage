@@ -33,7 +33,7 @@ body {
 .fixed-album img {
   transition: transform 0.3s ease;
 }
-.fixed-album:hover {
+.fixed-album img:hover {
   transform: scale(1.07);
 }
 
